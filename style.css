@@ -1,0 +1,102 @@
+.container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.todoContainer {
+  padding: 30px;
+  margin-top: 50px;
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  color: darkblue;
+  font-family: sans-serif;
+}
+
+.todoList {
+  width: 100%;
+  height: auto;
+}
+
+ul.list {
+  counter-increment: step-counter;
+  position: relative;
+  padding: 22px;
+}
+
+.list li {
+  list-style: circle;
+  padding: 15px;
+  font-family: system-ui;
+  font-weight: 600;
+}
+
+input#addInput {
+  padding: 8px 12px;
+  float: left;
+  outline: none;
+  border: 1px solid darkblue;
+}
+
+button#addBtn {
+  padding: 9px 20px;
+  margin: 0 17px;
+  float: left;
+  outline: none;
+  border: 1px solid darkblue;
+}
+button#removeBtn {
+  border: 1px solid darkblue;
+  padding: 9px 22px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.listContainer {
+  height: 400px;
+  overflow: scroll;
+}
+.list li {
+  border-bottom: 0.5px solid #0000000d;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: darkblue;
+  border-radius: 30%;
+}
+
+.listIcon {
+  float: right;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.listIcon button {
+  margin: 0;
+  font-size: 13px;
+  /* cursor: pointer; */
+  pointer-events: none;
+  border: 1px solid;
+  color: darkblue;
+  border-radius: 8px;
+}
+.listIcon:hover button {
+  color: darkblue;
+  font-size: 14px;
+  opacity: 100%;
+}
+/* Js adding Css Property*/
+.rBox {
+  height: 0px;
+}
+.falling {
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+}
