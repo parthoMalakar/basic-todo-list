@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>To Do List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todoContainer">
+        <div class="title">
+          <h1>To Do List</h1>
+        </div>
+
+        <div class="todoList">
+          <div class="listContainer" id="listContainer">
+            <ul class="list" id="lists">
+              <li>
+                Learn HTML
+                <div class="listIcon"><button>X</button></div>
+              </li>
+              <li>
+                Learn CSS
+                <div class="listIcon"><button>X</button></div>
+              </li>
+              <li>
+                Learn Javascript
+                <div class="listIcon"><button>X</button></div>
+              </li>
+            </ul>
+          </div>
+          <div class="formContainer">
+            <div class="col big">
+              <input type="text" id="addInput" required />
+            </div>
+            <div class="col">
+              <button type="button" id="addBtn" class="btn-primary">
+                Add Item
+              </button>
+            </div>
+            <div class="col">
+              <button type="button" id="removeBtn" class="btn-primary">
+                Hide List
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="todo.js"></script>
+  </body>
+</html>
